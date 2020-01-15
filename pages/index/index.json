@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "my-search": "/components/mySearch/mySearch"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#eee",
+  "backgroundTextStyle": "dark"
+}

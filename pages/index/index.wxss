@@ -1,0 +1,99 @@
+.index {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+swiper {
+  height: 340rpx;
+}
+
+swiper navigator {
+  width: 100%;
+  height: 100%;
+}
+
+swiper navigator image {
+  width: 100%;
+  height: 100%;
+}
+
+.cart-nav {
+  padding: 30rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 170rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+}
+
+.cart-nav .cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-nav .cart-item .item-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  box-shadow: 0 2px 8px rgba(10, 16, 20, .24), 0 0 8px rgba(10, 16, 20, .12);
+  background-color: #6edff4;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 50rpx;
+  color: #fff;
+}
+
+.cart-nav .cart-item .icon-huodong {
+  background-color: #91df7b;
+}
+
+.cart-nav .cart-item .icon-gouwuche {
+  background-color: #e88bff;
+  padding-left: 10rpx;
+  width: 110rpx
+}
+
+.cart-nav .cart-item .icon-youhui {
+  background-color: #ffa3b4;
+}
+
+.floor-title image{
+  padding: 20rpx 10rpx 0;
+  height: 50rpx;
+}
+
+.floor-main{
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+
+.left{
+  flex: 0 0 33.33%;
+  width: 33.33%;
+  margin-left: 20rpx;
+}
+
+.left image {
+  width: 232rpx;
+  height: 386rpx;
+}
+
+.right{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right image {
+  width: 222rpx;
+  height: 180rpx;
+}
+
+.right image:nth-child(1),
+.right image:nth-child(3){
+  margin: 0 18rpx 18rpx 0;
+}

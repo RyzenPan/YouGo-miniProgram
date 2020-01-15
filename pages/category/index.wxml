@@ -1,0 +1,26 @@
+<view class="catePage">
+  <view class="left">
+    <scroll-view scroll-y="true" style="height: 100%;width:180rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="leftStyle">
+      <view class="cate-item" wx:for="{{cateList}}" wx:key="index">
+        <view class="{{index === cateIndex ? 'cate-btn active' : 'cate-btn'}}" bindtap="chooseCate" data-index="{{index}}">{{item.cat_name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="right">
+    <scroll-view scroll-y="true" style="height: 100%;width:550rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="rightStyle">
+      <view class="cateMain" wx:for="{{cateContentList}}" wx:key="index">
+        <view class="title">
+          <text style="color:#ccc;margin-right:20px">/</text>{{item.cat_name}}
+          <text style="color:#ccc;margin-left:20px">/</text>
+        </view>
+        <view class="main">
+          <navigator url="#" class="main-item" wx:for="{{item.children}}" wx:key="index" wx:for-item="item1">
+            <image src="{{item1.cat_icon}}"></image>
+            <text>{{item1.cat_name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
