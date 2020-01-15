@@ -1,4 +1,7 @@
 <view class="index">
+  <!-- 搜索 -->
+  <my-search></my-search>
+
   <!-- 轮播图 -->
   <swiper circular autoplay interval="5000">
     <swiper-item wx:for="{{swiperList}}" wx:key="index">

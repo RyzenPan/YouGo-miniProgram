@@ -1,2 +1,12 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<view class="goods">
+  <view class="good-item" wx:for="{{goodsList}}" wx:key="index">
+    <view class="good-pic">
+      <image src="{{item.goods_small_logo}}"></image>
+    </view>
+
+    <view class="good-content">
+      <text class="good-title">{{item.goods_name}}</text>
+      <view class="good-price">￥{{item.goods_price}}</view>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,18 @@
-/* 这里的样式只应用于这个自定义组件 */
-.inner {
-  color: red;
+.search {
+  height: 100rpx;
+  width: 750rpx;
+  background-color: #ffbd27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBtn {
+  width: 700rpx;
+  height: 80rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
 }

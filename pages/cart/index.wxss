@@ -1,1 +1,70 @@
 /* pages/cart/index.wxss */
+.cart {
+  padding: 0 20rpx;
+}
+
+.address{
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.address .addBtn {
+  padding: 20rpx 30rpx;
+  background-color: #f8f8f8;
+  border-radius: 15rpx;
+}
+
+.cart-item {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item .cart-pic image {
+  padding: 19rpx 6rpx 19rpx 20rpx;
+  width: 192rpx;
+  height: 192rpx
+}
+
+.cart-content {
+  font-size: 26rpx;
+  padding: 46rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-content .cart-price {
+  font-size: 28rpx;
+  color: red;
+}
+
+/*checkbox 整体大小  */
+checkbox {
+  line-height: 236rpx;
+}
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  margin:0 auto;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 18rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #e03440;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

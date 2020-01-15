@@ -1,2 +1,25 @@
-<!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view class="user">
+  <view class="userBg" >
+    <image src="https://tvax1.sinaimg.cn/crop.0.0.1002.1002.180/8e4d9e8cly8fme2xozqkpj20ru0ru0ue.jpg?KID=imgbed,tva&Expires=1579083776&ssig=ZrtDQzGlkc" ></image>
+    <view class="username">Ryzen</view>
+  </view>
+
+  <view class="userOrder">
+    <view class="userOrderItem" >
+      <text class="iconfont icon-daifukuan"></text>
+      <view class="title">待付款</view>
+    </view>
+        <view class="userOrderItem" >
+      <text class="iconfont icon-peisongzhong"></text>
+      <view class="title">待收货</view>
+    </view>
+        <view class="userOrderItem" >
+      <text class="iconfont icon-lishizhangdan"></text>
+      <view class="title">退货/退款</view>
+    </view>
+        <view class="userOrderItem" >
+      <text class="iconfont icon-dingdan  "></text>
+      <view class="title">全部订单</view>
+    </view>
+  </view>
+</view>

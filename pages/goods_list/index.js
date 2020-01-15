@@ -5,15 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    pageIndex: 1,
+    goodsList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getGoodsList()
   },
+
+  getGoodsList(){
+    wx.showLoading({
+      title: '数据加载中...',
+    })
+
+    wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/goods/search',
+      success:res=>{
+        console.log(res)
+        this.setData({
+          goodsList: res.data.message.goods
+        })
+        wx.hideLoading()
+      }
+    })
+  },
+
+  onPullDownRefresh: function () {
+    this.setData({
+      pageIndex: 1,
+      goodsList: []
+    })
+    this.getGoodsList()
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

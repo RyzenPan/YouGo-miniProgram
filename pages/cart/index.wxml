@@ -1,2 +1,24 @@
-<!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="cart">
+  <view class="address">
+    <text class="addBtn">+ 添加收货地址</text>
+  </view>
+
+
+
+  <checkbox-group bindchange="checkboxChange">
+    <label >
+      <view class="cart-item">
+      <checkbox value="" checked="" />
+      
+        <view class="cart-pic">
+          <image src="http://image2.suning.cn/uimg/b2c/newcatentries/0070078057-000000000634917020_1_400x400.jpg"></image>
+        </view>
+
+        <view class="cart-content">
+          <text class="cart-title">创维（Skyworth）42X6 42英寸10核智能酷开网络平板液晶</text>
+          <view class="cart-price">￥3999</view>
+        </view>
+      </view>
+    </label>
+  </checkbox-group>
+</view>

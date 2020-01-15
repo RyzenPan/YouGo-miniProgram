@@ -1,5 +1,4 @@
-<!-- 这是自定义组件的内部WXML结构 -->
-<view class="inner">
-  {{innerText}}
-    <slot></slot>
-</view>
+  <!-- 搜索 -->
+  <view class="search">
+    <view class="searchBtn">搜索</view>
+  </view>

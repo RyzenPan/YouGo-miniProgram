@@ -18,6 +18,9 @@ Page({
   },
 
   getCateList(){
+    wx.showLoading({
+      title: '数据加载中...',
+    })
     wx.request({
       url: 'https://api.zbztb.cn/api/public/v1/categories',
       success:res=>{
@@ -28,6 +31,7 @@ Page({
         this.setData({
           cateContentList: this.data.cateList[0].children
         })
+        wx.hideLoading()
       }
     })
   },
