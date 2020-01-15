@@ -36,12 +36,28 @@
   color: #474747;
 }
 
-.userOrderItem {
-}
-
 .userOrderItem .iconfont{
   font-size: 80rpx;
 }
 .userOrderItem .title{
   font-size: 28rpx;
+}
+
+.userOption .userOptionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:30rpx 60rpx;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  font-size: 30rpx;
+  color: #434343;
+}
+.userOption .userOptionItem .left{
+  display: flex;
+  align-items: center;
+}
+.userOption .userOptionItem .left .iconfont{
+  font-size: 60rpx;
+  margin-right: 20rpx;
 }

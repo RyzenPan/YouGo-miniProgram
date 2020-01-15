@@ -1,3 +1,5 @@
+<!-- 搜索 -->
+<my-search></my-search>
 <view class="goods">
   <view class="good-item" wx:for="{{goodsList}}" wx:key="index">
     <view class="good-pic">

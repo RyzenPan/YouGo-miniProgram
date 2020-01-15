@@ -3,22 +3,36 @@
     <text class="addBtn">+ 添加收货地址</text>
   </view>
 
-
-
   <checkbox-group bindchange="checkboxChange">
-    <label >
-      <view class="cart-item">
-      <checkbox value="" checked="" />
-      
-        <view class="cart-pic">
-          <image src="http://image2.suning.cn/uimg/b2c/newcatentries/0070078057-000000000634917020_1_400x400.jpg"></image>
-        </view>
+    <view class="cart-item">
+      <label>
+        <checkbox value="" checked="" />
+      </label>
+      <view class="cart-pic">
+        <image src="http://image2.suning.cn/uimg/b2c/newcatentries/0070078057-000000000634917020_1_400x400.jpg"></image>
+      </view>
 
-        <view class="cart-content">
-          <text class="cart-title">创维（Skyworth）42X6 42英寸10核智能酷开网络平板液晶</text>
-          <view class="cart-price">￥3999</view>
+      <view class="cart-content">
+        <text class="cart-title">创维（Skyworth）42X6 42英寸10核智能酷开网络平板液晶</text>
+        <view class="cart-price">
+          <text>￥3999</text>
+          <view class="amount">
+            <view class="minus amountBtn">-</view>
+            <text>1</text>
+            <view class="add amountBtn">+</view>
+          </view>
         </view>
       </view>
-    </label>
+    </view>
   </checkbox-group>
+
+  <view class="footer">
+    <view class="left">
+      <checkbox value="" checked="" class="totalBox" />
+      <text class="all">全选</text>
+      <text style="color:#333;font-size:30rpx;">合计:</text>
+      <text style="color:red;font-size:40rpx;">￥3999</text>
+    </view>
+    <view class="total">去结算(2)</view>
+  </view>
 </view>

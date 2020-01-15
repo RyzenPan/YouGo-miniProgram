@@ -1,1 +1,122 @@
 /* pages/pay/index.wxss */
+.pay {
+  padding: 20rpx;
+  background-color: #f9f9f9;
+}
+
+.pay .address {
+  padding: 20rpx;
+  background-color: #fff;
+}
+.pay .address .addr-title {
+  font-weight: 600;
+}
+
+.pay .address .consignee {
+  margin: 20rpx 0;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.pay .address .consignee text {
+  margin-right: 20rpx;
+}
+
+.good-item {
+  display: flex;
+}
+
+.good-item .good-pic image {
+  padding: 19rpx 6rpx 19rpx 20rpx;
+  width: 192rpx;
+  height: 192rpx
+}
+
+.good-content {
+  font-size: 26rpx;
+  padding: 46rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.good-content .good-price {
+  font-size: 28rpx;
+  color: red;
+}
+
+
+
+.buyGoods {
+  padding: 20rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+}
+
+.buyGoods .buyTitle {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 83rpx;
+  font-size: 24rpx;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .left {
+  display: flex;
+  align-items: center;
+  width: 500rpx;
+  margin-left: 20rpx;
+}
+
+.footer .left .all {
+  margin: 0 30rpx 0 15rpx;
+  color: #666;
+}
+
+.footer .totalBox {
+  line-height: 83rpx;
+}
+
+.footer .total {
+  margin-right: 30rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  background-color: red;
+  color: #fff;
+}
+
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  margin:0 auto;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 18rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #e03440;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

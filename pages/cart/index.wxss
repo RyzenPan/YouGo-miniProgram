@@ -68,3 +68,68 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
 }
+
+.amountBtn {
+  border: 1px solid #ddd;
+  border-radius: 32rpx;
+  /* margin-right: 100rpx; */
+  font-size: 32rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  height: 40rpx;
+  /* padding: 10rpx; */
+}
+
+.amount{
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.amount text {
+  margin: 0 20rpx;
+}
+
+.cart-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 83rpx;
+  font-size: 24rpx;
+  border-top: 1px solid #eee;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .left {
+  display: flex;
+  align-items: center;
+  width: 500rpx;
+  margin-left: 20rpx;
+}
+
+.footer .left .all {
+  margin: 0 30rpx 0 15rpx;
+  color: #666;
+}
+
+.footer .totalBox {
+  line-height: 83rpx;
+}
+
+.footer .total {
+  margin-right: 30rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  background-color: red;
+  color: #fff;
+}

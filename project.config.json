@@ -81,6 +81,13 @@
 					"id": -1,
 					"name": "用户页",
 					"pathName": "pages/user/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页",
+					"pathName": "pages/pay/index",
 					"scene": null
 				}
 			]
