@@ -5,7 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
+    activeName: '',
+    tabData: [{
+      id: 1,
+      tabName: '全部'
+    },
+    {
+      id: 2,
+      tabName: '待付款'
+    },
+    {
+      id: 3,
+      tabName: '待发货'
+      },
+      {
+        id: 4,
+        tabName: '退款/退货'
+      }
+    ],
+  },
 
+  onMyTab(e) {
+    this.setData({
+      activeName: e.detail.currentTarget.dataset.index.tabName
+    })
   },
 
   /**

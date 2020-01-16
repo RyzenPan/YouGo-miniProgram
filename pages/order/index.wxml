@@ -1,10 +1,6 @@
-<view class="orderBox">
-  <view class="tab">
-    <view class="tab-item active">全部</view>
-    <view class="tab-item">待付款</view>
-    <view class="tab-item">待发货</view>
-    <view class="tab-item">退款/退货</view>
-  </view>
+<view class="orderBox"> 
+<!-- tab栏 -->
+  <myTab tabData="{{tabData}}" bindmytap="onMyTab"></myTab>
 
   <view class="order">
     <view class="order-item">

@@ -1,11 +1,7 @@
 <!-- 搜索 -->
 <my-search></my-search>
 <!-- tab栏 -->
-  <view class="tab">
-    <view class="tab-item active">综合</view>
-    <view class="tab-item">销量</view>
-    <view class="tab-item">价格</view>
-  </view>
+  <myTab tabData="{{tabData}}" bindmytap="onMyTab"></myTab>
 <!-- 商品列表 -->
 <view class="goods">
   <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="good-item" wx:for="{{goodsList}}" wx:key="index">

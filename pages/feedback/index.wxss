@@ -44,3 +44,11 @@ textarea {
   padding: 0 30rpx;
   height: 391rpx;
 }
+
+.submit {
+  text-align: center;
+  background-color: #ffbd27;
+  line-height: 70rpx;
+  margin: 30rpx;
+  border-radius: 35rpx;
+}

@@ -1,17 +1,17 @@
 <view class="search">
-  <input class="search-input" auto-focus placeholder="请输入商品名" />
-  <text class="searchBtn">搜索</text>
+  <input class="search-input" auto-focus placeholder="请输入商品名" bindinput="keyword" />
+  <text class="searchBtn" bindtap="searchGoods">搜索</text>
 </view>
 
 <view class="goods">
-  <view class="good-item">
+  <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="good-item" wx:for="{{searchInfo}}" wx:key="index">
       <view class="good-pic">
-        <image src="http://image2.suning.cn/uimg/b2c/newcatentries/0070078057-000000000634917020_1_400x400.jpg"></image>
+        <image src="{{item.goods_big_logo}}"></image>
       </view>
 
       <view class="good-content">
-        <text class="good-title">创维（Skyworth）42X6 42英寸10核智能酷开网络平板液晶</text>
-        <view class="good-price">￥3999</view>
+        <text class="good-title">{{item.goods_name}}</text>
+        <view class="good-price">￥{{item.goods_price}}</view>
       </view>
-    </view>
+    </navigator>
 </view>

@@ -6,11 +6,31 @@ Page({
    */
   data: {
     goodsList: [],
-    cid:'',
+    cid: '',
     reqObj: {
       pagenum: 1,
       pagesize: 10
-    }
+    },
+    activeName: '',
+    tabData: [{
+        id: 1,
+        tabName: '综合'
+      },
+      {
+        id: 2,
+        tabName: '销量'
+      },
+      {
+        id: 3,
+        tabName: '价格'
+      }
+    ]
+  },
+
+  onMyTab(e){
+    this.setData({
+      activeName: e.detail.currentTarget.dataset.index.tabName
+    })
   },
 
   /**
@@ -42,7 +62,7 @@ Page({
       data: {
         cid: this.data.cid,
         ...this.data.reqObj
-      } ,
+      },
       success: res => {
         console.log(res)
         this.setData({

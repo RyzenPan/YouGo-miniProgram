@@ -18,7 +18,7 @@
 .catePage {
   display: flex;
   margin-top: 100rpx;
-  padding-bottom: 200rpx;
+  /* padding-bottom: 100rpx; */
 }
 
 .right .title {
@@ -51,7 +51,7 @@
 
 .leftStyle{
   width: 20%;
-  height: 120%;
+  height: 100%;
   position: fixed; 
 }
 
@@ -61,4 +61,9 @@
 
 .active {
   color: red;
+}
+
+.nullbox{
+  height: 150rpx;
+  background-color: #f8f8f8;
 }

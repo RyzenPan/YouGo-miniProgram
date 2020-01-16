@@ -7,15 +7,16 @@
 <view class="catePage">
   <!-- 左边tab栏 -->
   <view class="left">
-    <scroll-view scroll-y="true" style="height: 100%;width:180rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="leftStyle">
+    <scroll-view scroll-y="true" style="height: 100%;width:180rpx;" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="leftStyle">
       <view class="cate-item" wx:for="{{cateList}}" wx:key="index">
         <view class="{{index === cateIndex ? 'cate-btn active' : 'cate-btn'}}" bindtap="chooseCate" data-index="{{index}}">{{item.cat_name}}</view>
       </view>
+      <view class="nullbox"></view>
     </scroll-view>
   </view>
   <!-- 右侧品类 -->
   <view class="right">
-    <scroll-view scroll-y="true" style="height: 100%;width:550rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="rightStyle">
+    <scroll-view scroll-y="true" style="height: 100%;width:550rpx;" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="rightStyle">
       <view class="cateMain" wx:for="{{cateContentList}}" wx:key="index">
         <view class="title">
           <text style="color:#ccc;margin-right:20px">/</text>{{item.cat_name}}

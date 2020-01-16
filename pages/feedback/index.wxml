@@ -14,4 +14,10 @@
   <view class="questionInput">
     <textarea auto-focus="true" placeholder="请描述一下您的问题" />
   </view>
+
+  <!-- <view class="uploadPic">
+
+  </view> -->
+
+  <view class="submit">提交</view>
 </view>
