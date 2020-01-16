@@ -1,2 +1,17 @@
-<!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<view class="search">
+  <input class="search-input" auto-focus placeholder="请输入商品名" />
+  <text class="searchBtn">搜索</text>
+</view>
+
+<view class="goods">
+  <view class="good-item">
+      <view class="good-pic">
+        <image src="http://image2.suning.cn/uimg/b2c/newcatentries/0070078057-000000000634917020_1_400x400.jpg"></image>
+      </view>
+
+      <view class="good-content">
+        <text class="good-title">创维（Skyworth）42X6 42英寸10核智能酷开网络平板液晶</text>
+        <view class="good-price">￥3999</view>
+      </view>
+    </view>
+</view>

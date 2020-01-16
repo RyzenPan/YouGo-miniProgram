@@ -12,10 +12,10 @@
   </swiper>
   <!-- 分类 -->
   <view class="cart-nav">
-    <view class="cart-item">
+    <navigator url="/pages/category/index" open-type='switchTab' class="cart-item">
       <view class="item-img iconfont icon-fenlei"></view>
       <text>分类</text>
-    </view>
+    </navigator>
     <view class="cart-item">
       <view class="item-img iconfont icon-huodong"></view>
       <text>秒杀</text>

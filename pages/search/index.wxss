@@ -1,1 +1,51 @@
 /* pages/search/index.wxss */
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #e7e7e7;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  width: 550rpx;
+  margin: 30rpx 15rpx 30rpx 30rpx;
+  padding-left: 30rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.searchBtn {
+  width: 100rpx;
+  height: 60rpx;
+  background-color: #ffbd27;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  /* padding: 10rpx 20rpx; */
+}
+
+
+.good-item {
+  display: flex;
+}
+
+.good-item .good-pic image {
+  padding: 19rpx 6rpx 19rpx 20rpx;
+  width: 192rpx;
+  height: 192rpx
+}
+
+.good-content {
+  font-size: 26rpx;
+  padding: 46rpx 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.good-content .good-price {
+  font-size: 28rpx;
+  color: red;
+}

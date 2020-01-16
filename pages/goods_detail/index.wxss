@@ -1,1 +1,121 @@
 /* pages/goods_detail/index.wxss */
+
+swiper {
+  height: 500rpx;
+  overflow: hidden;
+}
+
+swiper swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+swiper swiper-item image {
+  width: 100%;
+  height: 750rpx;
+}
+
+.goods-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+
+.goods-title .share text {
+  font-size: 60rpx;
+}
+
+.goods-title .share text:nth-child(1) {
+  margin-right: 20rpx;
+}
+
+.shareActive {
+  color: #ffbd27;
+}
+
+.goods-title .price {
+  font-size: 36rpx;
+  color: #ea4350;
+}
+
+.goods-title-content {
+  padding: 0 30rpx;
+  font-weight: bold;
+  overflow: hidden; /** 隐藏超出的内容 **/
+  word-break: break-all;
+  text-overflow: ellipsis; /** 多行 **/
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2; /** 显示的行数 **/
+  font-size: 30rpx;
+}
+
+.goods-pic {
+  border-top: 1px solid #eee;
+  text-align: center;
+  margin-top: 30rpx;
+  padding: 0 10rpx;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 94rpx;
+  font-size: 24rpx;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .left {
+  display: flex;
+  align-items: center;
+  width: 340rpx;
+  margin-left: 20rpx;
+  padding-left: 20rpx;
+}
+
+.footer .buyNow,
+.footer .addCart {
+  margin-right: 30rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  background-color: red;
+  color: #fff;
+}
+
+.footer .addCart {
+  background-color: #fcaa23;
+  margin-right: 0;
+}
+
+.left-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  margin-right: 35rpx;
+  letter-spacing: 3rpx;
+  color: #434343;
+}
+
+.left-item .iconfont {
+  font-size: 35rpx;
+}
+
+.goods-detail {
+  padding-bottom: 94rpx;
+}
+
+.tuwenDetail {
+  font-size:26rpx;
+  color:#333;
+  padding:30rpx;
+}

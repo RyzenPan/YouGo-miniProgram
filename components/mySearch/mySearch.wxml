@@ -1,4 +1,4 @@
   <!-- 搜索 -->
   <view class="search">
-    <view class="searchBtn">搜索</view>
+    <navigator url="/pages/search/index" class="searchBtn">搜索</navigator>
   </view>

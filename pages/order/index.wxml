@@ -1,2 +1,25 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<view class="orderBox">
+  <view class="tab">
+    <view class="tab-item active">全部</view>
+    <view class="tab-item">待付款</view>
+    <view class="tab-item">待发货</view>
+    <view class="tab-item">退款/退货</view>
+  </view>
+
+  <view class="order">
+    <view class="order-item">
+      <view class="order-content">
+        <text class="order-content-title" style="color:#696969;">订单编号</text>
+        <text>HMD202001090000004892</text>
+      </view>
+       <view class="order-content">
+        <text class="order-content-title" style="color:#696969;">订单金额</text>
+        <text style="color:#EA4350;">￥3999</text>
+      </view>
+       <view class="order-content">
+        <text class="order-content-title" style="color:#696969;">订单日期</text>
+        <text>2020/1/8 18:32:22</text>
+      </view>
+    </view>
+  </view>
+</view>

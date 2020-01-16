@@ -22,7 +22,7 @@
           <text style="color:#ccc;margin-left:20px">/</text>
         </view>
         <view class="main">
-          <navigator url="/pages/goods_list/index" class="main-item" wx:for="{{item.children}}" wx:key="index" wx:for-item="item1">
+          <navigator url="/pages/goods_list/index?cate_id={{item.cat_id}}" class="main-item" wx:for="{{item.children}}" wx:key="index" wx:for-item="item1">
             <image src="{{item1.cat_icon}}"></image>
             <text>{{item1.cat_name}}</text>
           </navigator>

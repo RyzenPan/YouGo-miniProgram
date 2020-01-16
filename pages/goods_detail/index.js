@@ -5,14 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    goodsDetailData:[],
+    goods_id:1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (options.goods_id){
+      this.setData({
+        goods_id: options.goods_id
+      })
+    }
+    this.getGoodsDetail()
+  },
 
+  getGoodsDetail(){
+    wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/goods/detail?goods_id=' + this.data.goods_id,
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          goodsDetailData:res.data.message
+        })
+      }
+    })
   },
 
   /**

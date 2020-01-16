@@ -108,6 +108,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   position: fixed;
   bottom: 0;
   left: 0;
+  background-color: #fff;
 }
 
 .footer .left {

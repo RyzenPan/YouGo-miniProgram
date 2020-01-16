@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "my-search": "../../components/mySearch/mySearch"
-  }
+  },
+  "navigationBarTitleText": "商品列表"
 }

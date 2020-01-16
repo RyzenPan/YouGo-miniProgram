@@ -2,6 +2,7 @@
   "usingComponents": {
     "my-search": "../../components/mySearch/mySearch"
   },
+  "navigationBarTitleText": "商品列表",
   "enablePullDownRefresh": true,
   "backgroundColor": "#eee",
   "backgroundTextStyle": "dark"
