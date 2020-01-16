@@ -63,6 +63,7 @@ swiper navigator image {
 .floor-title image{
   padding: 20rpx 10rpx 0;
   height: 50rpx;
+  width: 600rpx;
 }
 
 .floor-main{

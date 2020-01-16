@@ -1,1 +1,46 @@
-/* pages/feedback/index.wxss */
+.feedback {
+  background-color: #f9f9f9
+}
+
+.feedback .questionCate {
+  margin: 20rpx 30rpx -30rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+}
+
+.questionCate .questionList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+
+.questionCate .queItem {
+  background-color: #ededed;
+  margin: 10rpx 0;
+  width: 181rpx;
+  height: 46rpx;
+  display: block;
+  line-height: 46rpx;
+  border-radius: 23rpx;
+  text-align: center;
+}
+
+textarea {
+  width: 700rpx;
+  padding: 25rpx 0;
+  font-size: 26rpx;
+}
+
+.textarea-wrp {
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.questionInput {
+  background-color: #fff;
+  margin: 30rpx;
+  padding: 0 30rpx;
+  height: 391rpx;
+}

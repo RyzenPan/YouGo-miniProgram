@@ -1,0 +1,4 @@
+<!-- tab栏 -->
+  <view class="tab">
+    <view class="tab-item {{activeName === item.tabName ? 'active' : ''}}" bindtap="handleItemActive" data-index="{{item}}" wx:for="{{tabData}}" wx:key="index">{{item.tabName}}</view>
+  </view>

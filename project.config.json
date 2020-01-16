@@ -111,6 +111,13 @@
 					"pathName": "pages/goods_detail/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

@@ -1,2 +1,17 @@
-<!--pages/feedback/index.wxml-->
-<text>pages/feedback/index.wxml</text>
+<view class="feedback">
+  <myTab tabData="{{tabData}}" bindmytap="onMyTab"></myTab>
+
+  <view class="questionCate">
+    <view>请选择问题类型</view>
+    <view class="questionList">
+      <text class="queItem">功能问题</text>
+      <text class="queItem">性能问题</text>
+      <text class="queItem">体验问题</text>
+      <text class="queItem">其他</text>
+    </view>
+  </view>
+
+  <view class="questionInput">
+    <textarea auto-focus="true" placeholder="请描述一下您的问题" />
+  </view>
+</view>
