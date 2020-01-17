@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+    address:{}
+  },
 
+  // 获取用户地址信息
+  handleChooseAddress(){
+    wx.getSetting({
+      success:res=>{
+        const scopeAddress = res.authSetting["scope.address"]
+        if (scopeAddress === true || scopeAddress === undefined){
+          wx.chooseAddress({
+            success: address => {
+              console.log(address)
+              wx.setStorageSync('address', address)
+            }
+          })
+        } else {
+          wx.openSetting({
+            success:res2=>{
+              wx.chooseAddress({
+                success: address => {
+                  console.log(address)
+                  wx.setStorageSync('address', address)
+                }
+              })
+            }
+          })
+        }
+      }
+    })
   },
 
   /**
@@ -26,7 +54,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const address = wx.getStorageSync('address')
+    this.setData({
+      address
+    })
   },
 
   /**

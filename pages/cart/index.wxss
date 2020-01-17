@@ -134,3 +134,23 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   background-color: red;
   color: #fff;
 }
+
+
+.addressDetail {
+  padding: 20rpx;
+  background-color: #fff;
+}
+.addressDetail .addr-title {
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.addressDetail .consignee {
+  margin: 20rpx 0;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.addressDetail .consignee text {
+  margin-right: 20rpx;
+}

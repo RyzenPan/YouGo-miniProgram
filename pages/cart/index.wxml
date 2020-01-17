@@ -1,7 +1,16 @@
 <view class="cart">
-  <view class="address">
-    <text class="addBtn">+ 添加收货地址</text>
+  <view class="address" wx:if="{{!address.userName}}">
+    <text class="addBtn" bindtap="handleChooseAddress">+ 添加收货地址</text>
   </view>
+   <view class="addressDetail" wx:else>
+      <view class="addr-title">
+        {{address.provinceName + address.cityName + address.countyName + address.detailInfo}}
+      </view>
+      <view class="consignee">
+        <text>{{address.userName}}</text>
+        <text>{{address.telNumber}}</text>
+      </view>
+    </view>
 
   <checkbox-group bindchange="checkboxChange">
     <view class="cart-item">
