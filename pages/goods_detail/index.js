@@ -25,11 +25,34 @@ Page({
     wx.request({
       url: 'https://api.zbztb.cn/api/public/v1/goods/detail?goods_id=' + this.data.goods_id,
       success:(res)=>{
-        console.log(res)
+        // console.log(res)
         this.setData({
           goodsDetailData:res.data.message
         })
       }
+    })
+  },
+
+  handlerCartAdd(){
+    let cart = wx.getStorageSync("cart") || []
+    let index = cart.findIndex(v => {
+      return v.goods_id === this.data.goodsDetailData.goods_id
+    })
+
+    if(index === -1){
+      // 不存在
+      this.data.goodsDetailData.num = 1;
+      cart.push(this.data.goodsDetailData)
+    } else {
+      // 已经存在
+      cart[index].num ++
+    }
+
+    wx.setStorageSync("cart", cart)
+    wx.showToast({
+      title: '添加成功',
+      icon:"success",
+      mast:true
     })
   },
 

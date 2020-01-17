@@ -34,6 +34,10 @@
   justify-content: start;
 }
 
+.right .main .cate_name {
+  font-size: 26rpx;
+}
+
 .right .main-item {
   display: flex;
   flex-direction: column;

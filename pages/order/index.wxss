@@ -25,6 +25,7 @@
   background-color: #fff;
   height: 190rpx;
   padding: 30rpx 30rpx;
+  font-size: 28rpx;
 }
 
 .order-item .order-content {

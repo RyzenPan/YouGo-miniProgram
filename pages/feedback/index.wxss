@@ -51,4 +51,5 @@ textarea {
   line-height: 70rpx;
   margin: 30rpx;
   border-radius: 35rpx;
+  font-size: 28rpx;
 }

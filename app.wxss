@@ -1,2 +1,6 @@
 
 @import "/lib/iconfont.wxss";
+
+image {
+  box-sizing: border-box;
+}

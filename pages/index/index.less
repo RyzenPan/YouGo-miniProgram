@@ -65,37 +65,17 @@ swiper navigator image {
   margin:30rpx 0 0 0;
 }
 
-.floor-item {
-  background-color: #fff;
-}
-
-.floor {
-  padding: 0 10rpx;
-}
 .floor-main navigator image {
   float: left;
-  width: 32.4vw;
-  height: 56vw;
+  width: 33.33vw;
 }
 
-.floor-main navigator:nth-child(2) image,
-.floor-main navigator:nth-child(3) image,
-.floor-main navigator:nth-child(4) image,
-.floor-main navigator:nth-child(5) image
+.floor-main navigator image:nth-last-child(2),
+.floor-main navigator image:nth-last-child(3),
+.floor-main navigator image:nth-last-child(4),
+.floor-main navigator image:nth-last-child(5)
 {
   /* 232 / 386 = 33.33% / height */
-  height: 27.72vw
-}
-
-.floor-main navigator:nth-child(2) image,
-.floor-main navigator:nth-child(3) image {
-  border-bottom: 5rpx solid #fff;
-  border-left: 10rpx solid #fff;
-}
-
-.floor-main navigator:nth-child(4) image,
-.floor-main navigator:nth-child(5) image {
-  border-top: 5rpx solid #fff;
-  border-left: 10rpx solid #fff;
-  border-bottom: 10rpx solid #fff;
+  /* height: 100rpx; */
+  height: 386 * 33.33vw / 232 / 2;
 }
